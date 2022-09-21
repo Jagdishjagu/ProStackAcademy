@@ -1,6 +1,6 @@
 function display_Alert() {
-  alert("Mouseover & Mouseenter & Mousemove same");
   document.getElementById("abc").style.backgroundColor = "red";
+  alert("Mouseover & Mouseenter & Mousemove same");
 }
 function mouse_Out() {
   alert("Mouseout & Mouseleave is same");

@@ -1,0 +1,9 @@
+
+  .container {
+      background-color: rgb(246, 248, 250);
+      padding: 15px;
+      border-radius: 15px;
+  box-shadow: inset 5px 5px 12px rgb(10, 10, 10),
+    5px 5px 12px rgba(0, 0, 0, 0.16);
+  
+  

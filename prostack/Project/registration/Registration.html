@@ -19,21 +19,23 @@
     </nav>
     <div class="container mt-5">
         <div class="rows">
-            <div class="col-4 ">
+            <div class="col-12 ">
                 <form>
                     <div class="form-group">
 
-                        <input id="uName" type="text" class="form-control" required
+                        <input onkeypress="validateemail()" id="uName" type="text" class="form-control"
                             placeholder="Email address or phone number">
-                        <span id="umessage"></span><br>
-                        <input type="text" class="form-control" placeholder="Password"><br>
-                        <button style="width: 340px;" class="btn btn-primary">Login</button><br>
+                        <span id="email-message"></span><br>
 
+                        <input onkeypress="validatepassword()" id="upassword" type="text" class="form-control"
+                            placeholder="Password">
+                        <span id="password-message"></span><br>
+
+                        <button class="btn btn-primary">Login</button><br>
                         <a href="">Forgetton Password?</a>
                         <hr>
                         <br>
-                        <button style="width: 340px;" class="btn btn-success">Create New Account</button>
-
+                        <button class="btn btn-success">Create New Account</button>
                     </div>
                 </form>
 

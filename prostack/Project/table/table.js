@@ -7007,12 +7007,12 @@ function displayData() {
     row =
       row +
       `<tr>
-<td> ${emp.id} </td>
-<td> ${emp.first_name} </td>
-<td> ${emp.last_name} </td>
-<td> ${emp.email} </td>
-<td> ${emp.gender} </td>
-</tr>`;
+  <td> ${emp.id} </td>
+  <td> ${emp.first_name} </td>
+  <td> ${emp.last_name} </td>
+  <td> ${emp.email} </td>
+  <td> ${emp.gender} </td>
+  </tr>`;
   }
   document.getElementById("rajini").innerHTML = row;
 }

@@ -1,0 +1,8 @@
+// Map //
+// Map iterates array and excecute function for array length time and return the new array//
+// We use ele to access array object and index to access array length //
+// for each also same as Map but it does not return new array //
+//---------------------------------***********---------------------------------//
+// FOREACH //
+
+//---------------------------------***********---------------------------------//

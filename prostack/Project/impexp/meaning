@@ -1,0 +1,5 @@
+// import from other file and we can export to other file//
+// We cannot use ES6 features //
+// We can only use ES5 // using module.export = Array name //
+// Transpiler is to convert one version ES5 to another version ES6 using (Babel)//
+// String literal is to read variable name ${} and to construct URL we use string literal//

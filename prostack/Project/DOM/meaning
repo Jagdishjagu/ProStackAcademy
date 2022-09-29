@@ -1,0 +1,5 @@
+// class is a templete/plan to construct object//
+// Class contains property and method, Where property is variable and method is function //
+// with help of ref object we can access class member //
+// this key word refers to current working object //
+// constructor At a time of creating object to initiate or require value we need constructor and it excecutes autoomatically & it excecute only one time at the time of creating object //

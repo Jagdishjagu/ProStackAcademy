@@ -13,6 +13,6 @@ employees.map((ele) => {
   console.log(ele); // This will excecute 1 time if we use ELE//
 });
 
-employees.map((ele, index) => {
+employees.map((index) => {
   console.log(index); // This will excecute index value of array//
 });

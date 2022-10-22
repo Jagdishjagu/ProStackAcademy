@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-class Message1 extends Component {
+class Messageone extends Component {
   state = {
     msg: "Hello",
   };
-  updateHadler = (value) => {
+  updateHandler = (value) => {
     this.setState({ msg: value });
   };
   render() {
@@ -13,18 +13,16 @@ class Message1 extends Component {
         <h1>Binding Concept</h1>
         <hr />
         <h3>New Message:{this.state.msg}</h3>
-        <button className={this.updateHadler.bind(this, "Hello Good Morning")}>
+        <button onClick={this.updateHandler.bind(this, "Good Morning")}>
           Gm
         </button>
-        <button
-          className={this.updateHadler.bind(this, "Hello Good Afternoon")}
-        >
+        <button onClick={this.updateHandler.bind(this, "Hello Good Afternoon")}>
           Ga
         </button>
-        <button className={this.updateHadler.bind(this, "Hello Good Evening")}>
+        <button onClick={this.updateHandler.bind(this, "Hello Good Evening")}>
           Ge
         </button>
-        <button className={this.updateHadler.bing(this, "Hello Good Night")}>
+        <button onClick={this.updateHandler.bing(this, "Hello Good Night")}>
           Gn
         </button>
       </div>
@@ -32,4 +30,4 @@ class Message1 extends Component {
   }
 }
 
-export default Message1;
+export default Messageone;

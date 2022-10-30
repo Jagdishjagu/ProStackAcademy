@@ -1,34 +1,57 @@
 import React, { Component } from "react";
 
-class Form extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { msg: "Hey login and enjoy" };
-  }
+export class Form extends Component {
+  state = {
+    name: "",
+    email: "",
+    password: "",
+  };
+  updateHandler = (event) => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
+
+  submitHandler = (event) => {
+    event.preventDefault();
+  };
 
   render() {
     return (
       <div>
         <h1>Form Validation</h1>
-        <h3>Form Message:{this.state.msg}</h3>
-        <div className="container">
+        <pre>{JSON.stringify(this.state)}</pre>
+        <div className="container-fluid">
           <div className="rows">
             <div className="col-md-4">
               <div className="form-group">
-                <form>
+                <form onSubmit={this.submitHandler}>
                   <input
-                    className="form-control"
                     type="text"
+                    className="form-control"
+                    onChange={this.updateHandler}
+                    name="name"
+                    placeholder="Username"
+                  />
+                  <br />
+
+                  <input
+                    type="text"
+                    className="form-control"
+                    onChange={this.updateHandler}
                     placeholder="Email"
-                  ></input>
+                    name="email"
+                  />
                   <br />
+
                   <input
-                    className="form-control"
                     type="text"
+                    className="form-control"
+                    onChange={this.updateHandler}
                     placeholder="Password"
-                  ></input>
+                    name="password"
+                  />
                   <br />
-                  <button className="btn btn-primary">Submit</button>
+
+                  <input type="Submit" className="btn btn-success" />
                 </form>
               </div>
             </div>

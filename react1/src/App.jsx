@@ -5,6 +5,7 @@ import Message from "./Messages/Message";
 import Product from "./Product/Product";
 import Digital from "./digital/Digital";
 import Form from "./Form/Form";
+import Usestate from "./Function/Usestate";
 
 let App = () => {
   return (
@@ -25,6 +26,11 @@ let App = () => {
       <hr />
       <br />
       <Form />
+      <hr />
+      <br />
+      <Usestate />
+      <hr />
+      <br />
     </div>
   );
 };

@@ -38,7 +38,7 @@ class Product extends Component {
                 <tr>
                   <td>{this.state.name}</td>
                   <td>
-                    <img src={this.state.img} alt="My Logo" width={100} />
+                    <img src={this.state.img} alt="My Logo" width={80} />
                   </td>
                   <td>{this.state.price}</td>
                   <td>
